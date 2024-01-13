@@ -1,13 +1,86 @@
-body {
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap');
+
+
+
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+  color: #EFEFEF;
+  background-color: #112B3C;
+ 
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1px solid #EFEFEF;
+
+}
+
+.navbar h1 {
+  color: #EFEFEF;
+}
+
+.navbar .link {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover{
+  color: #F66B0E;
+}
+
+.content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2px;
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0 ;
+  border-bottom: 1px solid #F66B0E;
+  cursor: pointer;
+}
+
+.blog-preview:hover{
+  
+  border: 1px solid #F66B0E;
+  transition: 1.5s;
+  box-shadow: 1px 3px 5px;
+ 
+}
+
+.blog-preview h2 {
+  font-size: 20px;
+  color: #EFEFEF;
+}
+
+.delete-button{
+  width: 60px;
+  height: 30px;
+  padding: 3px;
+  margin: 5px;
+  color: #EFEFEF;
+  background-color: #F66B0E;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover{
+  width: 70px;
+  color: #F66B0E;
+  background-color: #EFEFEF;
+  transition: 0.7s;
 }
